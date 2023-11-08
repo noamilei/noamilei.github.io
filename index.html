@@ -31,6 +31,49 @@
 		    .vidwid {width:70%;}
 		}
 
+		.down-arrow {
+		  animation: jumpInfiniteDown 1.5s infinite;
+			transform: rotateZ(90deg);
+		}
+
+		.right-arrow {
+			animation: jumpInfiniteRight 1.5s infinite;
+		}
+		.container {
+		  /* height: 200px; */
+		  position: relative;
+		}
+
+		.vertical-center {
+		  margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+		}
+		@keyframes jumpInfiniteDown {
+		  0% {
+		    margin-top: 0;
+		  }
+		  50% {
+		    margin-top: 20px;
+		  }
+		  100% {
+		    margin-top: 0;
+		  }
+		}
+		@keyframes jumpInfiniteRight {
+		  0% {
+		    margin-left: 0;
+		  }
+		  50% {
+		    margin-left: 20px;
+		  }
+		  100% {
+		    margin-left: 0;
+		  }
+		}
+
 		</style>
 
 
@@ -43,24 +86,40 @@
 				<!-- bienvenida  -->
 				<section id="bienvenida">
 					<h3>Yo se que estás enojado y decepcionado.</h3>
-					<h3>Yo también, te lo aseguro.</h3>
+					<h4>Yo también, te lo aseguro.</h4>
 
-					<p>Pero no podemos dejar que el enojo nos lleve a entregar nuestro querido país</p>
+					<p>Pero no podemos dejar que el enojo nos lleve a destruir nuestro querido país</p>
 
 					<p>Pensemos juntos, sin fanatismos ni chicanas... con honestidad y con FUENTES</p>
-					<p>Te quiero contar por qué creo que <b>Milei NO debe ser Presidente</b></p>
+
+					<p>
+						Te quiero contar por qué creo que <b>Milei NO debe ser Presidente</b>
+					</p>
+					<!-- <img class="right-arrow" style="width: 100px;" src="imgs/arrow.svg">
+					<br />
+					<img class="down-arrow" style="width: 100px;" src="imgs/arrow.svg"> -->
+
+					<div style="font-size: medium;">
+						<span style="color: red">Continúa deslizando </span>
+						<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+					</div>
 				</section>
 
 				<!-- argumento  -->
 				<section id="argumento">
+					<p>Con la siguiente información te voy a mostar que: </p>
 					<ul>
 						<li>Milei es inestable, impredecible, cruel y violento</li>
-						<li>Su plan económico implica destruir nuestros ingresos y aumentar la miseria.</li>
+						<li>Su plan económico implica aumentar la pobreza</li>
 						<li>Descree de la democracia y reivindica la dictadura</li>
-						<li>Cree en propuestas como: vender órganos, niños, libre portación de armas...</li>
-						<li>Quiere entregar nuestras empresas y recursos naturales</li>
+						<li>Propone vender órganos, niños, libre portación de armas...</li>
+						<li>No es anti-casta</li>
 					</ul>
-					<p>¿No me crees? Juzgalo vos mismo/a a partir de sus propias palabras...
+					<p>Juzgalo vos mismo/a...</p>
+					<div style="font-size: medium;">
+						<span style="color: red">Continúa deslizando </span>
+						<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+					</div>
 				</section>
 
 				<!-- Crueldad --------------------------------------->
@@ -70,8 +129,19 @@
 						<ul>
 							<li>No le importan las personas, sólo las ganancias</li>
 							<li>Se expresa con violencia y morbosidad</li>
-						<ul>
-					  <p>Veamos ejemplos &darr; </p>
+						</ul>
+					  <!-- <p>Veamos ejemplos &darr; </p> -->
+						<div style="width: 100%;">
+							<div  style="font-size: medium; width: 45%; display: inline-block;">
+								<span style="color: red">Ver videos</span>
+								<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+							<div   style="font-size: medium; width: 45%;display: inline-block;">
+								<span style="color: red">Más argumentos </span>
+								<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+						</div>
+
 					</section>
 					<section  id="morir-de-hambre">
 						<p>Cree que no debe haber derechos laborales.
@@ -132,10 +202,18 @@
 					<section  id="propuestas">
 						<h3 style="color: orange">Tiene propuestas inhumanas</h3>
 						<p>Venta de organos, Venta de niños, Libre portación de armas</p>
-						<p>Sus militantes dicen que estas propuestas no fueron puestas en su plataforma.
-							Pero estas son sus convicciones. <b>¿Se puede tener un presidente que quiere
+						<p><b>¿Se puede tener un presidente que quiere
 							habilitar la venta de niños o que todos anden armados?</b></p>
-						<p>Veamos sus propuestas en sus propias palabras &darr; </p>
+						<div style="width: 100%;">
+							<div  style="font-size: medium; width: 45%; display: inline-block;">
+								<span style="color: red">Ver videos</span>
+								<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+							<div   style="font-size: medium; width: 45%;display: inline-block;">
+								<span style="color: red">Más argumentos </span>
+								<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+						</div>
 					</section>
 
 					<section  id="venta-ninos">
@@ -181,12 +259,22 @@
 				<!-- Destruir --------------------------------------->
 				<section>
 					<section  id="destruir">
-						<h3 style="color: orange">Planea destruir muchas de las cosas que nos hicieron un gran país</h3>
-						<p>Arancelar o privatizar la educación, salud, nuestros recursos, etc</p>
+						<h3 style="color: orange">Su plan es eliminar muchas de las cosas que nos hicieron un gran país</h3>
+						<p>Arancelar o privatizar la educación, la salud, los subsidios que nos ayudan a acceder a servicios básicos...</p>
+						<div style="width: 100%;">
+							<div  style="font-size: medium; width: 45%; display: inline-block;">
+								<span style="color: red">Ver videos</span>
+								<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+							<div   style="font-size: medium; width: 45%;display: inline-block;">
+								<span style="color: red">Más argumentos </span>
+								<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+						</div>
 					</section>
 
 					<section  id="justicia-soial">
-						<p>Milei cree que no tenesmo que tener derechos ni ayuda alguna</p>
+						<p>Milei cree que no tenemos que tener derechos ni ayuda alguna</p>
 						<p style="font-size: smaller;">(si naciste pobre te morirás pobre)</p>
 						<div class="video-container">
 							<video style="width:100%;" data-autoplay loop controls>
@@ -233,7 +321,17 @@
 							generará (aún más) pobreza y miseria</h3>
 						<p>Dolarizar sin dólares, romper relaciones con nuestro principales
 							socios comerciales, quitar todos los subsidios, son ejemplos de
-							políticas que <b>dañarán fuertemente nuestro sistema productivo y nuestros bolsillos</b></p>
+							políticas que <b>dañarán fuertemente nuestro sistema productivo y nuestros bolsillos</b>.</p>
+							<div style="width: 100%;">
+								<div  style="font-size: medium; width: 45%; display: inline-block;">
+									<span style="color: red">Ver videos</span>
+									<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+								</div>
+								<div   style="font-size: medium; width: 45%;display: inline-block;">
+									<span style="color: red">Más argumentos </span>
+									<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+								</div>
+							</div>
 					</section>
 
 					<section  id="dolarizar">
@@ -243,12 +341,31 @@
 							documento conjunto en donde denuncian que <b>sólo se lo puede realizar
 							con una hiperinflación que destruya los salarios o tomando una DEUDA
 							AÚN MAYOR a la que tenemos con el FMI</b></p>
-						<img style="width: 100%" src="imgs/documento_economistas.png">
+						<a href="https://www.infobae.com/economia/2023/09/10/la-dolarizacion-es-un-espejismo-44-destacados-economistas-explican-por-que-seria-una-iniciativa-desacertada/">
+							<img style="width: 100%" src="imgs/documento_economistas.png">
+						</a>
 					</section>
+
+					<section  id="dolarizar">
+						<p>No hay paises desarrollados en el mundo cuya moneda sea una extranjera.</p>
+						<p style="font-size: large;">En América <b>sólo lo hicieron Ecuador, El Salvador y Panamá</b>. Algunas citas de esta análisis de la BBC:</p>
+						<a href="https://www.infobae.com/economia/2023/09/10/la-dolarizacion-es-un-espejismo-44-destacados-economistas-explican-por-que-seria-una-iniciativa-desacertada/">
+							<img style="width: 30%" src="imgs/dolarizacion.png">
+						</a>
+						<ul style="font-size: large;">
+							<li>La dolarización distorsionó los sistemas de precios internos, haciendo que los países se volvieran más caros para su propia gente</li>
+							<li>Algunos bienes de consumo se volvieron inaccesibles para la mayor parte de la sociedad</li>
+							<li>Uno de los efectos más negativos que tuvo la dolarización fue la destrucción de la industria local </li>
+							<li>El Salvador ha tenido que asumir un enorme costo social. Ha pagado la dolarización con el dolor de los migrantes</li>
+							<li>Y Panamá se convirtióen un paraíso fiscal donde tienen sus cuentas los mafiosos del mundo</li>
+						</ul>
+
+					</section>
+
 
 					<section  id="ajuste-fmi">
 						<p style='font-size: smaller;'>Si el ajuste que padecemos ahora te parece mucho,
-							considerá que <b>Milei quiere hacer un ajuste aún más duro que e del FMI</b>.</p>
+							considerá que <b>Milei quiere hacer un ajuste aún más duro que el del FMI</b>.</p>
 						<div class="video-container">
 							<video style="width:100%;" data-autoplay loop controls>
 								<source src="videos/economía/ajuste_fmi_2.mp4" type="video/mp4">
@@ -284,10 +401,24 @@
 				<section>
 					<section  id="democracia">
 						<h3 style="color: orange">Milei no cree en la democracia</h3>
-						<p>texto <b>texto</b></p>
+						<p>...y además reivindica a la dictadura</p>
+						<p><b>¿Se puede confiar en alguien así para dirigir un país?</b></p>
+						<div style="width: 100%;">
+							<div  style="font-size: medium; width: 45%; display: inline-block;">
+								<span style="color: red">Ver videos</span>
+								<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+							<div   style="font-size: medium; width: 45%;display: inline-block;">
+								<span style="color: red">Más argumentos </span>
+								<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+						</div>
 					</section>
-					<section  id="ajuste-fmi">
-						<p style='font-size: smaller;'>texto.</p>
+					<section  id="no-democracia">
+						<p style='font-size: smaller;'>
+							Para el la democracia no es un asunto cívico y moral,
+							es un problema matemático que no sabe resolver
+						</p>
 						<div class="video-container">
 							<video style="width:100%;" data-autoplay loop controls>
 								<source src="videos/democracia/democracia.mp4" type="video/mp4">
@@ -296,15 +427,317 @@
 					</section>
 
 					<section  id="dictadura">
-						<p style="font-size: smaller;">dictadurac.</p>
-						<div class="video-container">
-							<video  class="vidwid"   data-autoplay loop controls>
+						<p style="font-size: smaller;">Se refiere al genocidio de la dictadura como un "exceso",
+						usando la misma justificación que dio el dictador Massera en los jucios del Nunca Más.</p>
+						<div class="video-container" >
+							<video  class="vidwid" data-autoplay loop controls>
 								<source src="videos/democracia/dictadura.mp4" type="video/mp4">
 							</video>
 						</div>
 					</section>
 
 				</section>
+
+
+				<!-- Mujeres --------------------------------------->
+				<section>
+					<section  id="muejres-y-genero">
+						<h3 style="color: orange">Milei es misógino</h3>
+						<p>agrede a las mujeres y es intolerantes con la diversidad sexual y de género.</p>
+						<p><b>¿No debería un presidente ser ecuánime y tolerante?</b></p>
+					</section>
+
+					<section  id="agresion1">
+						<p style='font-size: smaller;'>
+							En uno de muchísimos ejemplos, agredió a una panelista en un programa
+							de tv y al no querer retractarse lo invitarona  retirarse.
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/mujeres/mujeres1.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="agresion2">
+						<p style='font-size: smaller;'>
+							En 2018 agredió a una periodista por opinar distinto y fue
+							<a href="https://www.lanacion.com.ar/politica/javier-milei-debio-pedir-disculpas-y-someterse-a-un-analisis-psicologico-por-agredir-verbalmente-a-nid29082023/">
+								obligado judicialmente a pedir disculpas e ir al psicólogo por ello</a>
+								.
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/mujeres/agresion.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="esi">
+						<p style='font-size: smaller;'>
+							No sólo quiere cerrar el Ministerio de la Mujer...
+							también quiere eliminar la ESI, que ha permitido a muchas niñas
+							aprender a protejerse de posibles violadores o tratos indadecuados
+							de otras personas.
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/mujeres/ESI3.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="identidad-de-genero">
+						<p style='font-size: smaller;'>
+							Dice respetar "el proyecto de vida del otro", pero se burla
+							de las identidades de género de forma humillante.
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/mujeres/identidad_de_género.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="matrimonio-igualitario">
+						<p style='font-size: smaller;'>
+							Su vicepresidenta está visiblemente incómoda con aceptar el
+							matrimonio igualitario, que otorga igualdad de derechos a homosexuales.
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/mujeres/matrimonio_igualitario.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+				</section>
+
+
+
+
+
+				<!-- Internacional --------------------------------------->
+				<section>
+					<section  id="internacional">
+						<h3 style="color: orange">Milei es vende-patria</h3>
+						<p>
+							Su proyecto político ningunea a Malvinas
+						</p>
+					</section>
+
+					<section  id="Thatcher">
+						<p style='font-size: smaller;'>
+							Milei se siente identificado con Thatcher, la primer ministra
+							de Inglaterra cuando nos declararon la Guerra de Malvinas
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/internacional/Thatcher.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="insulto-al-Papa">
+						<p style='font-size: smaller;'>
+							Odia al Papa argentino, por puro sesgo ideológico (ve comunistas en todos lados)
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/internacional/insulto_al_papa1.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="romper-brasil2">
+						<p style="font-size: x-large;">
+							Sus relaciones internacionales sólo obedecen al fanatismo ideológico.
+						  Plantea <b>romper relaciones con nuestros dos principales socios comerciales</b>.</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/economía/romper_con_brasil_y_china.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+				</section>
+
+
+				<!-- Naturaleza --------------------------------------->
+				<section>
+					<section  id="naturaleza">
+						<h3 style="color: orange">Milei no cree en cuidar al planeta</h3>
+						<p>
+							Está tan cegado por su dogmatismo que niega los problemas de la
+							contaminación y el daño que le hacemos al planeta
+						</p>
+
+						<div style="width: 100%;">
+							<div  style="font-size: medium; width: 45%; display: inline-block;">
+								<span style="color: red">Ver videos</span>
+								<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+							<div   style="font-size: medium; width: 45%;display: inline-block;">
+								<span style="color: red">Más argumentos </span>
+								<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+						</div>
+					</section>
+
+					<section  id="calentamiento_global">
+						<p style='font-size: smaller;'>
+							Cree que el calentamiento global es un "invento marxista".
+							<b>Usa esa teoría conspirativa para negar lo que afirman ABSOLUTAMENTE TODAS
+							las instituciones científicas del mundo: que el planeta se calienta por el uso de hidrocarburos</b>.
+						</p>
+						<div class="video-container">
+							<video style="width:100%;" data-autoplay loop controls>
+								<source src="videos/naturaleza/calentamiento_global.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="contaminar">
+						<p style='font-size: smaller;'>
+							Hasta <b>defiende la contaminación de ríos</b>,
+							aduciendo una teoría económica que no aceptarían en ninguna universidad del mundo.
+						</p>
+						<div class="video-container">
+							<video class="vidwid" data-autoplay loop controls>
+								<source src="videos/naturaleza/contaminar.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+				</section>
+
+
+
+
+				<!-- Casta --------------------------------------->
+				<section>
+					<section  id="casta">
+						<h3 style="color: orange">Milei se vende como anti-casta...</h3>
+						<p>
+							Pero se unió a las personas que denunciaba como "casta" hasta hace 3 semanas...
+						</p>
+						<p>
+							<b>¿Se puede confiar en alguien que vende así su ideales?</b>
+						</p>
+						<div style="width: 100%;">
+							<div  style="font-size: medium; width: 45%; display: inline-block;">
+								<span style="color: red">Ver videos</span>
+								<img class="down-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+							<div   style="font-size: medium; width: 45%;display: inline-block;">
+								<span style="color: red">Más argumentos </span>
+								<img class="right-arrow" style="width: 50px; vertical-align:middle;" src="imgs/arrow.svg">
+							</div>
+						</div>
+					</section>
+
+					<section  id="macri">
+						<p style='font-size: smaller;'>
+							Pasó de denostar a Macri a ser su aliado en poco tiempo ...
+						¿Por que lo hizo?¿Lo habrán comprado?¿Quien gobernaría si gana Milei?</p>
+						<div class="video-container">
+							<video class="vidwid" data-autoplay loop controls>
+								<source src="videos/macri/macri.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+					<section  id="radicales">
+						<p style='font-size: smaller;'>
+							Se la pasó insultando a Juntos por el Cambio y a los Radicales... y ahora mendiga su voto
+						</p>
+						<div class="video-container">
+							<video class="vidwid" data-autoplay loop controls>
+								<source src="videos/macri/radicales.mp4" type="video/mp4">
+							</video>
+						</div>
+					</section>
+
+				</section>
+
+
+				<!-- Final --------------------------------------->
+				<section>
+					<section  id="final1">
+						<h3 style="color: orange">Reflexiones finales</h3>
+						<p>
+							<b>Estamos mal, pero podemos estar mucho peor.</b>
+							Aún si nuestro cirujano no logra curarnos (aún) no lo cambiaríamos por
+							un carnicero.
+							Milei no es apto para manejar un país. Sus ideas son crueles, dogmáticas,
+							conspiranóicas e inhumanas.
+						</p>
+						<p>
+							Aún así, es válido el planteo:
+							<b>"No me gusta Massa, no me gusta el peronismo y con él en el ministerio de economía nos está yendo mal"</b>
+						</p>
+						<p>Dejame decir dos palabras más sobre eso</p>
+					</section>
+					<section  id="final2">
+						<h3 style="color: orange">Acá no se debate peronismo o antiperonismo</h3>
+						<p style="font-size: smaller;"> En un balotaje tenemos que optar por quien va a gobernar, por mas que ninguno nos guste.
+							Es una elección pragmática, no de ideales.
+							<b>Es por eso que muchos conocidos antiperonistas, como Gargarela o Meijide, se han pronunciado por apoyar a Massa.</b>
+						</p>
+						<p>
+							¿Dejaron de ser anti-peronistas?
+							<b>No, sólo están optando por lo menos malo, por que la opción de Milei les parece peligrosa y antidemocrática</b>
+						</p>
+					</section>
+					<section  id="final3">
+						<h3 style="color: orange">"Pero con lo que está ya nos fue mal"</h3>
+						<p>Milei, desde que se asoció con Macri (ex-casta) adoptó el discurso del "cambio". <b>Ese discurso es un engaño</b>
+						</p>
+						<p>
+							Ya es inevitable que haya un cambio. El kirchnerismo perdió el poder en su interna. Massa no es kirchnerista y no es un títere de nadie.
+							<b>Además, cambiar por cambiar no es una virtud. Siempre podemos cambiar para peor. Hay que elegir QUE CAMBIO queremos.</b>
+						</p>
+					</section>
+					<section  id="final4">
+						<h3 style="color: orange">"Pero siendo ministro no logró arreglar nada"</h3>
+						<p style="font-size: smaller;">No es lo mismo ser ministro que presidente. Y en un año con la peor sequía y la mayor deuda en décadas es imposible juzgar cómo sería su real desempeño en un gobierno propio.
+						</p>
+						<p style="font-size: smaller;">
+							Aún así, NADA de lo que propone Milei está en condiciones de garantizar que tendrá éxito donde
+							el gobierno actual falló.
+							<b>Es fácil frenar la inflación detonando al país. Lo difícil es hacerlo sin abandonar a las personas que laburan día a día</b>.
+						</p>
+					</section>
+					<section  id="final4">
+						<h3 style="color: orange">"Pero no quiero quedar pegado al próximo fracaso"</h3>
+						<p><b>Nadie va a juzgar tu voto</b>. Nadie tiene por qué saberlo, además, porque es secreto</p>
+						<p>
+							En un Balotaje el voto no es adhesión a un proyecto. Sólo es optar por algo de lo que hay.
+						</p>
+					</section>
+					<section  id="final5">
+						<h3 style="color: orange">"¿Y la corrupción?"</h3>
+						<p>Corrupción hubo y habrá en todos los gobiernos</p>
+						<p>
+							Si Milei tenía alguna chance de evitar eso la terminó de eliminar al hacer su pacto de gobierno
+							con Macri y lo que el mismo llama casta.
+						</p>
+						<p>Resolver el problema de la corrupción es algo por lo que tenemos que luchar día a día en cualquier gobierno.
+						<b>No es ESO lo que se vota el 19 de Noviembre</b></p>
+					</section>
+					<section  id="final6">
+						<h3 style="color: orange">Este 19 optamos por una de dos opciones</h3>
+						<p><b>Podemos darle el poder a una persona cruel, con teorías absurdas, propuestas inhumnas y anti-patria</b></p>
+						<p>
+							O podemos tratar de <b>optar por una persona más normal</b>, que nos permitirá seguir peleando el día a día sin que detone todo.
+						</p>
+						<h3>La defensa de nuestra patria hoy nos exige votar a Massa (o al menos NO votar a Milei)</h3>
+					</section>
+
+
+				</section>
+
+
 
 			</div>
 		</div>
@@ -321,6 +754,8 @@
 				hash: true,
 				scrollActivationWidth: null,
 				// Learn about plugins: https://revealjs.com/plugins/
+				width: window.innerWidth,
+				height: window.innerHeight,
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
